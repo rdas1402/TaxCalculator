@@ -1,5 +1,8 @@
 package com.decorator;
-
+/*
+ This is class is responsible for creating objects for the items which needs to be added in
+ the bill.
+ */
 public class BillableItem implements Item {
 
 	private String name;
@@ -12,6 +15,10 @@ public class BillableItem implements Item {
 		this.initPrice = initPrice;
 	}
 
+	
+	/*
+	 * Getters and setters
+	 */
 	public String getName() {
 		return name;
 	}
