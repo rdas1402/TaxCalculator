@@ -1,4 +1,13 @@
+/* 
+* This is a concrete decorator class extending the Tax class.
+* 
+* @author  Rupam Das 
+* @since   2017-08-21 
+*/
+
 package com.decorator;
+
+import com.Interface.Item;
 
 public class SalesTax extends Tax {
 
