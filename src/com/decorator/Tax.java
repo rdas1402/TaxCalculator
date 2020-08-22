@@ -8,7 +8,7 @@
 package com.decorator;
 
 import com.Interface.Item;
-import com.service.TaxService;
+import com.util.Util;
 
 public abstract class Tax implements Item{
 
@@ -22,9 +22,10 @@ public Tax(Item item){
 this.item = item;
 }
 
+//The below code will calculate the price of the goods. Baseprice*taxRate
 public double getPrice(){
-	double salesTax = TaxService.nearest5Percent(this.item.getInitPrice() * this.getRate());
-	return TaxService.roundPrice(this.item.getPrice() + salesTax);
+	double salesTax = Util.nearest5Percent(this.item.getInitPrice() * this.getRate());
+	return Util.roundPrice(this.item.getPrice() + salesTax);
 }
 
 }

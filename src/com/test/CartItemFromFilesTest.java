@@ -16,7 +16,7 @@ package com.test;
 
 import org.junit.Test;
 
-import com.service.TaxService;
+import com.util.Util;
 
 
 
@@ -24,28 +24,28 @@ public class CartItemFromFilesTest {
 
 	@Test 
 	public void testFileEntry1() {
-		TaxService.getFromFile("source/in1.txt");
+		Util.getFromFile("source/in1.txt");
 	}
 		
 		
 	@Test
 	public void testFileEntry2() {
-		TaxService.getFromFile("source/in2.txt");
+		Util.getFromFile("source/in2.txt");
 	}
 	
 	@Test
 	public void testFileEntry3() {
-		TaxService.getFromFile("source/in3.txt");
+		Util.getFromFile("source/in3.txt");
 	}
 	
 	@Test
 	public void testFileEntry4() {
-		TaxService.getFromFile("source/in4.txt");
+		Util.getFromFile("source/in4.txt");
 	}
 	
 	@Test
 	public void testFileEntry5() {
-		TaxService.getFromFile("source/in5.txt");
+		Util.getFromFile("source/in5.txt");
 	}
 
 }
