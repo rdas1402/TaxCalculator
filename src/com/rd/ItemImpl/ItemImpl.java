@@ -1,11 +1,12 @@
-package com.InterfaceImpl;
-
-import com.Interface.Item;
-
 /*
- This is class is responsible for creating objects for the items which needs to be added in
- the bill.
+ *This is a implementation class of Item interface.
+ * @author  Rupam Das 
+ * @since   2017-08-24 
  */
+package com.rd.ItemImpl;
+
+import com.rd.Item.Item;
+
 public class ItemImpl implements Item {
 
 	private String name;
@@ -19,29 +20,26 @@ public class ItemImpl implements Item {
 	}
 
 	
-	/*
-	 * Getters and setters
-	 */
 	public String getName() {
 		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
 	}
 
 	public boolean isImported() {
 		return isImported;
 	}
 
-	public void setImported(boolean isImported) {
-		this.isImported = isImported;
-	}
-
 	public boolean isExempt() {
 		return isExempt;
 	}
 
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public void setImported(boolean isImported) {
+		this.isImported = isImported;
+	}
+	
 	public void setExempt(boolean isExempt) {
 		this.isExempt = isExempt;
 	}
@@ -56,7 +54,7 @@ public class ItemImpl implements Item {
 
 	@Override
 	public int hashCode() {
-		return name.hashCode() + new Integer((int) (initPrice * 100));
+		return name.hashCode() + (int) (initPrice * 100);
 	}
 	@Override
 	public boolean equals(Object obj) {

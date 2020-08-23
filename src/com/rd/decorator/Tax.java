@@ -2,13 +2,13 @@
 * This is a abstract decorator class implementing the Item interface.
 * 
 * @author  Rupam Das 
-* @since   2017-08-21 
+* @since   2017-08-24 
 */
 
-package com.decorator;
+package com.rd.decorator;
 
-import com.Interface.Item;
-import com.util.Util;
+import com.rd.Item.Item;
+import com.rd.util.Util;
 
 public abstract class Tax implements Item{
 

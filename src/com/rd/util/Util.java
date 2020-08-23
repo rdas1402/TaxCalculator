@@ -3,10 +3,10 @@
 * it is stateless and cannot be instantiated.
 *  
 * @author  Rupam Das 
-* @since   2017-08-21 
+* @since   2017-08-24 
 */
 
-package com.util;
+package com.rd.util;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -16,7 +16,7 @@ import java.math.RoundingMode;
 import java.util.HashSet;
 import java.util.Set;
 
-import com.service.ShoppingCart;
+import com.rd.ShoppingCart.ShoppingCart;
 
 public class Util {
 

@@ -2,10 +2,10 @@
 * This class servers as a driver for the supporting classes
 * 
 * @author  Rupam Das 
-* @since   2017-08-21 
+* @since   2017-08-24 
 */
 
-package com.service;
+package com.rd.ShoppingCart;
 
 import java.text.DecimalFormat;
 import java.util.HashMap;
@@ -14,11 +14,11 @@ import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import com.Interface.Item;
-import com.InterfaceImpl.ItemImpl;
-import com.decorator.ImportTax;
-import com.decorator.SalesTax;
-import com.util.Util;
+import com.rd.Item.Item;
+import com.rd.ItemImpl.ItemImpl;
+import com.rd.decorator.ImportTax;
+import com.rd.decorator.SalesTax;
+import com.rd.util.Util;
 
 public class ShoppingCart {
 

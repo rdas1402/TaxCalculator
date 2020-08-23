@@ -9,14 +9,14 @@
 * This class servers as a Junit Test case class
 * 
 * @author  Rupam Das 
-* @since   2017-08-21 
+* @since   2017-08-24 
 */
 
-package com.test;
+package com.rd.test;
 
 import org.junit.Test;
 
-import com.util.Util;
+import com.rd.util.Util;
 
 
 
